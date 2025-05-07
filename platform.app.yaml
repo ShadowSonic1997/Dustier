@@ -1,0 +1,32 @@
+name: dust-emulator
+
+type: python:3.9
+
+disk: 1024
+
+hooks:
+    build: |
+        pip install flask
+
+web:
+    commands:
+        start: python dust-web/platform_server.py
+    locations:
+        "/":
+            root: "dust-web"
+            passthru: false
+            index:
+                - index.html
+            scripts: false
+            headers:
+                Cross-Origin-Opener-Policy: same-origin
+                Cross-Origin-Embedder-Policy: require-corp
+                Cross-Origin-Resource-Policy: cross-origin
+                Access-Control-Allow-Origin: "*"
+                Access-Control-Allow-Methods: "GET, POST, OPTIONS"
+                Access-Control-Allow-Headers: "X-Requested-With, Content-Type, Authorization"
+
+mounts:
+    "dust-web/saves":
+        source: storage
+        source_path: saves
