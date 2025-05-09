@@ -21,7 +21,7 @@
 - [StrikerX3](https://github.com/StrikerX3), for his research on 3D rendering on the DS
 - [Simone Coco](https://github.com/CocoSimone), [Fleroviux](https://github.com/fleroviux), [Lady Starbreeze](https://github.com/LadyStarbreeze), [Merry](https://github.com/merryhime), [Powerlated](https://github.com/Powerlated) and [Peach](https://github.com/wheremyfoodat) for help throughout development
 - The Emulation Development server on Discord as a whole, for providing several invaluable resources
-- KelpsyBerry for original version
+- [KelpsyBerry](https://github.com/kelpsyberry) for original version
 
 ## Sister projects
 - [**Kaizen**](https://github.com/SimoneN64/Kaizen): Experimental work-in-progress low-level N64 emulator
